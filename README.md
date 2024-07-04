@@ -1,2 +1,2 @@
-# turkish-error-annotation-guideline
-Turkish Error Annotation Guideline
+# Turkish Error Annotation Guideline
+This repository provides an error annotation guideline for Turkish introduced within the article ...
