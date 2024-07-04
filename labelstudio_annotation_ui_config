@@ -1,0 +1,62 @@
+<View>
+  <Filter toName="labels" minlength="0" name="filter"/>
+  <Labels name="labels" toName="text">
+    <Label value="HN" alias="HN" hint="HATALI NOKTALAMA" background="#58D68D"/>
+    <Label value="BA" alias="BA" hint="BİTİŞİK-AYRI" background="#58D68D"/>
+    <Label value="Dİ" alias="Dİ" hint="DİYAKRİTİK" background="#58D68D"/>
+    <Label value="BH" alias="BH" hint="BÜYÜK HARF" background="#58D68D"/>
+    <Label value="YA" alias="YA" hint="YAZIM" background="#58D68D"/>
+    <Label value="KI" alias="KI" hint="KISALTMA" background="#58D68D"/>
+
+    <Label value="ÜzY" alias="ÜzY" hint="ÜNSÜZ YUMUŞAMASI" background="#A569BD"/>
+    <Label value="ÜU" alias="ÜU" hint="ÜNLÜ UYUMU" background="#A569BD"/>
+    <Label value="ÜDü" alias="ÜDü" hint="ÜNLÜ DÜŞMESİ" background="#A569BD"/>
+    <Label value="KH" alias="KH" hint="KAYNAŞTIRMA HARFİ" background="#A569BD"/>
+    <Label value="ÜzB" alias="ÜzB" hint="ÜNSÜZ BENZEŞMESİ" background="#A569BD"/>
+    <Label value="ÜDa" alias="ÜDa" hint="ÜNLÜ DARALMASI" background="#A569BD"/>
+    <Label value="ÜT" alias="ÜT" hint="ÜNLÜ TÜREMESİ" background="#A569BD"/>
+    <Label value="ÜzT" alias="ÜzT" hint="ÜNSÜZ TÜREMESİ" background="#A569BD"/>
+    <Label value="SSKB" alias="SSKB" hint="SATIR SONU KELİME BÖLME" background="#A569BD"/>
+
+    <Label value="YK" alias="YK" hint="YANLIŞ KELİME" background="#85C1E9"/>
+    <Label value="EK" alias="EK" hint="EKSİK KELİME" background="#85C1E9"/>
+    <Label value="GK" alias="GK" hint="GEREKSİZ KELİME" background="#85C1E9"/>
+    <Label value="EC" alias="EC" hint="EKSİK CÜMLE" background="#85C1E9"/>
+    <Label value="GC" alias="GC" hint="GEREKSİZ CÜMLE" background="#85C1E9"/>
+    <Label value="İH" alias="İH" hint="İFADE HATASI" background="#85C1E9"/>
+
+    <Label value="ES" alias="ES" hint="EK SIRASI" background="#E74C3C"/>
+    <Label value="DU" alias="DU" hint="DURUM" background="#E74C3C"/>
+    <Label value="SA" alias="SA" hint="SAYI" background="#E74C3C"/>
+    <Label value="İY" alias="İY" hint="İYELİK" background="#E74C3C"/>
+    <Label value="ÇA" alias="ÇA" hint="ÇATI" background="#E74C3C"/>
+    <Label value="ZA" alias="ZA" hint="ZAMAN" background="#E74C3C"/>
+    <Label value="OL" alias="OL" hint="OLUMSUZLUK" background="#E74C3C"/>
+    <Label value="ŞA" alias="ŞA" hint="ŞAHIS" background="#E74C3C"/>
+    <Label value="Kİ" alias="Kİ" hint="KİP" background="#E74C3C"/>
+    <Label value="ÇF" alias="ÇF" hint="ÇEKİMSİZ FİİL" background="#E74C3C"/>
+    <Label value="İZ" alias="İZ" hint="İLGİ ZAMİRİ" background="#E74C3C"/>
+    <Label value="KT" alias="KT" hint="KELİME TÜRÜ" background="#E74C3C"/>
+    <Label value="GE" alias="GE" hint="GEREKSİZ EK" background="#E74C3C"/>
+    <Label value="SE" alias="SE" hint="SORU EKİ" background="#E74C3C"/>
+    <Label value="KS" alias="KS" hint="KELİME SIRASI" background="#E74C3C"/>
+    <Label value="AB" alias="AB" hint="ALT BİÇİMBİRİM" background="#E74C3C"/>
+
+    <Label value="KES" alias="KES" hint="KESİT/REGISTER" background="#D6E613"/>
+    <Label value="GEREKSİZ" alias="GEREKSİZ" hint="GEREKSİZ" background="#D917E6"/>
+    <Label value="DİJ" alias="DİJ" hint="DİJİTALLEŞTİRME HATASI" background="#2908ff"/>
+
+    <Label value="YENİ" alias="YENİ" hint="YENİ" background="#E401FB"/>
+  </Labels>
+  
+  <Text name="text" value="$DATA" showLabels="true" granularity="word"/>
+  <Style>.cls-name { color: #808080; border: 1px solid gray; padding: 5px; margin: 10px; }</Style>
+  <View className="cls-name">
+    <HyperText name="p1">
+      <p>Konu:</p>
+    </HyperText>
+    <Text name="subject_long" value="$SUBJECT_LONG"/>
+  </View>
+
+  <TextArea name="transcription" toName="text" editable="true" perRegion="true" required="true" maxSubmissions="1" rows="5" placeholder="Düzeltilmiş hali" displayMode="region-list" requiredMessage="Düzeltilmiş hali girilmemiş etiketler bulunmaktadır. Lütfen bu etiketlerin düzeltilmiş halini giriniz."/>
+</View>
